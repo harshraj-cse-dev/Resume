@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh Raj - Resume</title>
+<style>
+  @page { size: A4; margin: 0; }
+  body { margin: 0; padding: 0; font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; line-height: 1.5; background: #fff; }
+  .container { width: 210mm; height: 297mm; padding: 18mm 20mm; box-sizing: border-box; display: flex; flex-direction: column; justify-content: flex-start; }
+  .header { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 20px; }
+  .header h1 { font-size: 50px; font-weight: 700; margin: 0; letter-spacing: 1px; }
+  .sub-title { font-size: 18px; font-weight: 500; color: #555; margin: 4px 0 10px 0; }
+  .contact-info { font-size: 14px; color: #444; line-height: 1.5; text-align: center; }
+  .contact-info span { display: block; margin: 2px 0; }
+  .qr-code img { width: 80px; height: 80px; margin-top: 5px; }
+  .short-url { font-size: 14px; color: #1a73e8; margin-top: 4px; }
+  h2 { font-size: 22px; color: #1a73e8; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin: 20px 0 10px 0; }
+  p, li { font-size: 15px; margin: 4px 0; text-align: justify; }
+  ul { list-style: none; padding-left: 0; margin: 0; }
+  .skills span { display: inline-block; background: #e8f0fe; color: #1a73e8; padding: 6px 12px; border-radius: 4px; margin: 4px 4px 4px 0; font-size: 14px; }
+  .job-title { font-weight: bold; font-size: 16px; }
+  .job-duration { font-style: italic; font-size: 14px; color: #555; }
+  .section { display: flex; gap: 25px; }
+  .left-column { width: 32%; }
+  .right-column { width: 68%; }
+  .print-btn { display: block; margin: 15px auto; padding: 12px 24px; background: #1a73e8; color: #fff; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; }
+  .print-btn:hover { background: #155ab6; }
+
+  /* Align numeric info to the right */
+  .edu-row, .job-row { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; }
+  .edu-title, .job-title-left { font-weight: bold; }
+  .edu-gpa, .job-duration { font-style: italic; color: #555; margin-left: 10px; }
+
+  @media print { .print-btn { display: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Harsh Raj</h1>
+    <div class="sub-title">Software Engineer | Full-Stack Developer</div>
+    <div class="contact-info">
+      <span>Email: harshrajofficial9@gmail.com | Phone: 9472950637</span>
+      <span>GitHub: github.com/harshraj-cse-dev | LeetCode: leetcode.com/u/harshraj-cse-dev</span>
+    </div>
+    <div class="qr-code">
+      <img src="qr-code.png" alt="QR Code to Hosted Resume">
+    </div>
+    <div class="short-url">Scan QR code or visit: <strong>harshraj.dev/resume</strong></div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="section">
+    <!-- LEFT COLUMN -->
+    <div class="left-column">
+      <h2>Education</h2>
+      <div class="edu-row">
+        <span class="edu-title">B.Tech in Computer Science & Engineering — VIT Vellore</span>
+        <span class="edu-gpa">GPA: 6.50 / 10</span>
+      </div>
+
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>C++</span><span>Java</span><span>Python</span><span>DBMS</span><span>Cybersecurity</span>
+      </div>
+
+      <h2>Certifications</h2>
+      <ul>
+        <li>IBM Certified Cybersecurity Professional, 2025</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
+      <h2>Work Experience</h2>
+      <ul>
+        <li>
+          <div class="job-row">
+            <span class="job-title-left">Software Developer Intern — Company Name</span>
+            <span class="job-duration">Jan 2024 – Present</span>
+          </div>
+          <ul>
+            <li>Developed and maintained core modules for [project/product].</li>
+            <li>Optimized algorithm performance, reducing runtime by <strong>30%</strong>.</li>
+            <li>Collaborated with a team of 5 developers to deliver project milestones ahead of schedule.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="job-row">
+            <span class="job-title-left">Software Engineer Intern — Company Name</span>
+            <span class="job-duration">Jun 2023 – Dec 2023</span>
+          </div>
+          <ul>
+            <li>Implemented new features in [project/product], enhancing UX for <strong>1K+ users</strong>.</li>
+            <li>Automated testing scripts, reducing manual QA effort by <strong>40%</strong>.</li>
+            <li>Improved database performance with indexing and query optimization.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Professional Login System</strong> — <a href="https://github.com/harshraj-cse-dev/ProfessionalLoginSystem" target="_blank">GitHub</a>
+          <p>Developed a secure login system using C++ and Python with encryption & authentication.</p>
+        </li>
+        <li><strong>BuyBazaar</strong> — <a href="https://github.com/harshraj-cse-dev/BuyBazaar" target="_blank">GitHub</a>
+          <p>Built a full-stack e-commerce application with product management, cart, and checkout.</p>
+        </li>
+        <li><strong>E-commerce App</strong> — <a href="https://github.com/harshraj-cse-dev/ecommerce-app" target="_blank">GitHub</a>
+          <p>Developed a scalable e-commerce platform with payment gateway integration & DBMS backend.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- PRINT BUTTON -->
+<button class="print-btn" onclick="window.print()">Print / Download PDF</button>
+
+</body>
+</html>
